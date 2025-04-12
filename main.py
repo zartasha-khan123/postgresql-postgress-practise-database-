@@ -12,8 +12,7 @@ DATABASE_URL = os.getenv("DATABASE_URL_UNPOOLED")
 engine = create_engine(DATABASE_URL)
 
 user_list=[]
-
-
+# Ye function database se data fetch karne ke liye hai
 def main():
     with engine.connect() as connection:
         connection.execute(text(
